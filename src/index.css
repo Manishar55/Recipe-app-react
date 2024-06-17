@@ -5,13 +5,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('./img/bac6.avif');
+  /* background: url('./img/bac5.jpg'); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-image: fixed; */
+
+  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    /* padding: 20px; */
+    color: white;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+p{
+  font-size: larger;
+  font-weight: 500;
+}
 .searchBar{
   display: flex;
   justify-content: center;
@@ -28,7 +48,7 @@ code {
 }
 .searchBar button{
   width: 90px;
-  background-color: orange;
+  background-color: rgb(18, 187, 206);
   color: white;
   border: none;
   font-size: 20px;
@@ -57,15 +77,20 @@ code {
   height: 380px;
   text-align: center;
   background-color: #fff;
-  box-shadow: 0px 3px 3px 3px rgb(240, 240, 240);
+  color: #000;
+  /* box-shadow: 0px 3px 3px 3px rgb(240, 240, 240); */
   border-radius: 11px;
+  transition: 0.3s ease-out;
+}
+.mealImg:hover{
+  box-shadow: 1px 1px 5px 4px rgb(149 208 239 / 81%);
 }
 .mealImg p{
   font-weight: 600;
 }
 .mealImg button{
   width: 120px;
-  background-color: orange;
+  background-color: rgb(18, 187, 206);
   color: white;
   font-size: 17px;
   border: none;
@@ -73,30 +98,56 @@ code {
   padding: 7px;
   cursor: pointer;
 }
+.mealImg button:hover{
+  background-color: rgb(15, 115, 143);
+}
  .mealInfo img{
   width: 400px;
   height: 400px;
   border-radius: 11px;
  }
+
  .mealInfo {
-  /* width: 90%; */
+ 
+  background: url('./img/bac6.avif');
+  
+  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    /* overflow-y: auto; */
+    box-sizing: border-box;
+
   height: 90vh;
   margin: auto;
   display: flex;
   gap: 22px;
   justify-content:center ;
   align-items: center;
-  background-color: rgb(255, 181, 42);
+  
   padding: 32px;
+
  }
  .mealInfo button{
   border: none;
   padding: 9px;
   border-radius: 6px;
   font-size: 19px;
-  background-color: orangered;
+  background-color: rgb(18, 187, 206);
   color: #fff;
  }
 .mealInfo .info{
   margin-top: -112px;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family:cursive;
+
 }

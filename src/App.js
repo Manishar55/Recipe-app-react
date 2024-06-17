@@ -1,9 +1,19 @@
 import './App.css';
-import Mainpage from './component/Mainpage';
+import Food from './Components/Food';
+import { Route,Routes,BrowserRouter } from 'react-router-dom';
+import Recipe from './Components/Recipe';
 
 function App() {
   return (
-    <Mainpage/>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Food/>}/>
+      <Route path='/:meal' element={<Recipe/>}/>
+
+    </Routes>
+      
+    </BrowserRouter>
+     
   );
 }
 
